@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assesment1</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="q1">
+            <h1>1.Difference between flex row and column?</h1>
+            <p>This is a CSS property based on the concept of the flexbox.<br> Flex-direction property
+                can be applied to the parent elements and then the child elements of this parent tag
+                will be placed accordingly.<br><br>
+
+                <u>Flex-direction</u> : row, child elements will be placed
+                one after another in the same row (horizontally) and then the row or x-axis will be
+                considered as the main axis, in this case the y-axis will be known as cross axis.
+                <br>
+                <u>Flex-direction</u> : column places the child elements in
+                column(vertically) means every child element will be placed one after another in
+                the same column, and then the y-axis will be considered as the main axis and
+                x-axis will be known as cross axis
+            </p>
+            <h1>Example:Row</h1>
+            <div class="flex-row">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+            <br>
+            <h1>Example:Column</h1>
+            <div class="flex-column">
+                <div class="items"></div>
+                <div class="items"></div>
+                <div class="items"></div>
+            </div>
+
+        </div>
+    </div><br><br>
+    <!-- ************************************************************************************************************************************* -->
+
+    <div class="main">
+
+        <div class="q2">
+            <h1>2.Explain inline , internal and external stylesheet?</h1>
+            <p><u><b>Inline</b></u>
+                Inline style sheets is a term that refers to style sheet information being applied to the current
+                element.
+                <br> Example:<span style="color:red ;"> < p style="color: red ;">
+                    < /p></span>
+            </p>
+
+            <br>
+            <p><u><b>Internal</b></u>
+                Internal styling gets written in the head tag of the HTML file. It will be written in
+                the style tag. The styling written in style tag will be applicable only in that HTML
+                file.
+                <br>
+                Example:
+            </p>
+
+            <P>
+                <span style="color:red ;">
+                < head>
+                    < style>
+
+                        h1 {
+                        color : red;
+                        margin-left: 40px;
+                        }
+
+
+                        </style>
+                        < / head>
+                    </span>
+            </P>
+            <br>
+
+            <p><u><b>External:</b></u>
+                External Styling is done by creating a different CSS file with .css extension. This
+                file can be linked to any HTML file wherever the styling is required. The external
+                CSS file can be attached to the HTML file in the head tag in the link tag. This
+                styling is having the least priority but it is the most advised way of writing styling
+                in projects.<br>
+                Example<br>
+            <span style="color:red ;">
+                < head><br>
+                < title>Document< /title> <br>
+                < link rel="stylesheet" href="mystyle.css"> <br>
+                </ head> <br>
+                < body> <br>
+                < h1>This is a heading< /h1> <br>
+                < p>This is a paragraph.< /p> <br>
+                < /body> <br>
+            </span>
+        </div>
+    </div>
+    <br><br>
+    <!-- ************************************************************************************************************************************* -->
+
+    <div class="main">
+        <h1>3.Justify-content allows you to do what?</h1>
+        <p>The justify-content property specifies how flex-items are distributed along the
+            main axis of their parent flex-container. If the flex-direction of the parent container
+            is row(default value) then the main axis will be the x-axis. If the flex-direction is a
+            column then the main axis will be the y-axis.
+            <br>This property has 6 different possible values:
+        </p>
+        <ol>
+            <li>flex-start (default)</li>
+            <li>flex-end</li>
+            <li>center</li>
+            <li>space-around</li>
+            <li>space-between</li>
+            <li>space-evenly</li>
+            <li>stretch</li>
+        </ol>
+
+    </div>
+    <br><br>
+    <!-- ************************************************************************************************************************************* -->
+
+    <div class="main">
+        <h1>4.Difference between Absolute and Relative Positioning?</h1>
+        <p><u>Position: Relative</u>
+        <ul>
+            <li>It is used when we need to position the HTML element relative to its normal
+                position.</li>
+            <li>We can set top, right, bottom and left properties that will cause the element
+                to adjust away from the normal position.</li>
+        </ul><br>
+        <h3>Example</h3><br>
+        </p>
+        <div class="box" id="b1"></div>
+        <div class="box" id="b2"></div>
+        <div class="box" id="b3"></div>
+        <div class="box" id="b4"></div>
+        <br><br><br><br>
+        <p><u>Position: Absolute</u>
+        <ul>
+            <li>An element with position absolute will move according to the position of its
+                parent element.</li>
+            <li>In the absence of the parent element, the HTML element will be placed
+                according to the body tag. In this case if you want to place the element at
+                any position based on the parent element then we need to give the position :
+                relative to parent element and then position : absolute to child element.</li>
+        </ul>
+        <br>
+        <h3>Example</h3><br>
+        </p>
+        <div class="pa" id="box1"></div>
+        <div class="pa" id="box2"></div>
+        <div class="pa" id="box3"></div>
+        <div class="pa" id="box4"></div>
+
+        <br><br>
+
+    </div>
+    <br><br>
+
+    <!-- ************************************************************************************************************************************* -->
+
+    <div class="main">
+        <h1>5.What is grid-template-columns used for?</h1>
+        <p>Grid-template-columns property defines how many columns should be there in a
+            grid-container. The number of columns is determined by the number of values
+            defined in the space-separated list. It takes values in px, % and fraction (fr).</p>
+        <br>
+        <h3>Example</h3><br>
+        <div class="grid">
+            <div class="item">Item-1</div>
+            <div class="item">Item-2</div>
+            <div class="item">Item-3</div>
+            <div class="item">Item-4</div>
+            <div class="item">Item-5</div>
+            <div class="item">Item-6</div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- ************************************************************************************************************************************* -->
+
+    <div class="main">
+        <h1>6. What is z-index in CSS?</h1>
+        <p>The z-index property determines the stack level of an HTML element. The “stack
+            level” refers to the element's position on the Z axis (as opposed to the X axis or Y
+            axis). Elements with a higher index will be placed on top of elements with a lower
+            index. If the z-index value of any element is positive then that element will be at
+            the top and element having negative value of z-index will be at the bottom</p>
+
+        <br>
+        <h3>Example</h3><br>
+        <div class="card1">
+            <div id="card2"></div>
+        </div><br><br><br>
+    </div>
+
+    <br><br>
+    <!-- ************************************************************************************************************************************* -->
+
+    <div class="main">
+        <h1>7. What is the difference between Padding and Margin?</h1>
+        <table border="1px" >
+            <tr>
+                <th>Margin</th>
+                <th>Padding</th>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp; Margin provides the space<br>
+                    &nbsp;between the border and nearby<br>
+                    &nbsp;elements. It is the space outside<br>
+                    &nbsp;the border.
+                </td>
+                <td>
+                    &nbsp;Padding provides the space<br>
+                    &nbsp;between the border and the<br>
+                    &nbsp;content of an element. It is the<br>
+                    &nbsp;space inside the borde<br>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;You can set margin values to be<br>
+                    &nbsp;negative if you want elements to<br>
+                    &nbsp;overlap.<br>
+                </td>
+                <td>
+                    &nbsp;Padding values can only be<br>
+                    &nbsp;positive
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;When you set margin values, the<br>
+                    &nbsp;element's size does not change,<br>
+                    &nbsp;only the space around it.
+                </td>
+                <td>
+                    &nbsp;When you set padding values, the<br>
+                    &nbsp;size of that element increases
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
